@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function() {
         document.querySelector('#monster-form').reset();
     }
 
-    document.querySelector('.back').addEventListener('click', () => {
+    document.querySelector('#back').addEventListener('click', () => {
         if (pageRef > 50) {
             pageRef -= 50;
             document.querySelector('#monster-container').innerHTML = '';
@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    document.querySelector('.forward').addEventListener('click', () => {
+    document.querySelector('#forward').addEventListener('click', () => {
         if (pageRef < totalMonsters.length) {
             pageRef += 50;
             document.querySelector('#monster-container').innerHTML = '';
